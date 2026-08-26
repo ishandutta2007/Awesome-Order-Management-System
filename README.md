@@ -28,7 +28,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
 
@@ -40,63 +40,18 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## SaaS/Hosted Platforms
 
-- **[Fluent Commerce](https://fluentcommerce.com/)**  
-
-  Cloud-native distributed order management platform focused on flexible orchestration, BOPIS, ship-from-store, and high-volume omnichannel retail.
-
-
-
-- **[IBM Sterling Order Management](https://www.ibm.com/products/sterling-order-management)**  
-
-  Long-established enterprise OMS with deep configurability for complex, multi-node fulfillment networks and global retail/B2B operations.
-
-
-
-- **[Manhattan Active Order / OMS](https://www.manh.com/)**  
-
-  Enterprise unified commerce and order management solution tightly integrated with Manhattan’s broader supply-chain and store systems.
-
-
-
-- **[Brightpearl](https://www.brightpearl.com/)**  
-
-  Retail operations platform combining order management, inventory, and accounting oriented toward growing omnichannel brands.
-
-
-
-- **[Cin7](https://www.cin7.com/)**  
-
-  Cloud inventory and order management platform popular with multi-channel sellers needing connected stock and order workflows.
-
-
-
-- **[Extensiv OMS](https://www.extensiv.com/)**  
-
-  Order and warehouse management capabilities aimed at 3PLs and brands managing multi-channel fulfillment.
-
-
-
-- **[Anchanto](https://www.anchanto.com/)**  
-
-  Omnichannel order and inventory management platform with strong presence in Asia-Pacific markets.
-
-
-
-- **[Kibo Commerce](https://kibocommerce.com/)**  
-
-  Composable commerce and order management platform supporting unified customer and order experiences across channels.
-
-
-
-- **[NewStore](https://www.newstore.com/)**  
-
-  Omnichannel platform focused on store and digital order orchestration for modern retail brands.
-
-
-
-- **[Salesforce Order Management](https://www.salesforce.com/)**  
-
-  Order management capabilities within the Salesforce Commerce and Service Cloud ecosystem for connected customer journeys.
+| Product | Description | Starting Pricing | Free Tier / Free Trial Limits |
+| :--- | :--- | :--- | :--- |
+| **[Fluent Commerce](https://fluentcommerce.com/)** | Cloud-native distributed order management platform focused on flexible orchestration, BOPIS, ship-from-store, and high-volume omnichannel retail. | Starts at ~$15,000/mo ($180,000/yr) based on order volume and velocity tiers | No permanent free plan; guided POC demo environment available on request (0 days self-serve) |
+| **[IBM Sterling Order Management](https://www.ibm.com/products/sterling-order-management)** | Long-established enterprise OMS with deep configurability for complex, multi-node fulfillment networks and global retail/B2B operations. | Essentials starts at ~$0.028/order line/mo; Standard starts at ~$0.045/order line/mo | No permanent free plan; custom architectural discovery sandbox demo on request (0 days self-serve) |
+| **[Manhattan Active Order / OMS](https://www.manh.com/)** | Enterprise unified commerce and order management solution tightly integrated with Manhattan’s broader supply-chain and store systems. | Starts at ~$3,000/mo (enterprise licensing scaled by store nodes and order volume) | No permanent free plan; tailored interactive POC and product demo upon request (0 days self-serve) |
+| **[Brightpearl](https://www.brightpearl.com/)** | Retail operations platform combining order management, inventory, and accounting oriented toward growing omnichannel brands ($1M+ GMV). | Starts at ~$375/mo (billed annually; scales with order volume and connected channels) | No permanent free plan; 1-on-1 personalized workflow walkthrough and TSP upon request (0 days self-serve) |
+| **[Cin7](https://www.cin7.com/)** | Cloud inventory and order management platform popular with multi-channel sellers needing connected stock and order workflows. | Core Standard starts at $349/mo (Pro at $599/mo, Advanced at $999/mo, billed annually) | 14-day free trial with full standard order routing and inventory feature access (no credit card required) |
+| **[Extensiv OMS](https://www.extensiv.com/)** | Order and warehouse management capabilities aimed at 3PLs and brands managing multi-channel fulfillment. | Integration Manager starts at $39/mo; Order Manager (Skubana) starts at ~$399/mo | 30-day free trial on Integration Manager (first month free); guided demo sandbox on Order Manager |
+| **[Anchanto](https://www.anchanto.com/)** | Omnichannel order and inventory management platform with strong presence in Asia-Pacific markets. | Starts at ~$250/mo (entry tier scaled by monthly processed order volume and sales channels) | No permanent free plan; customized live sandbox demo and onboarding assessment on request (0 days self-serve) |
+| **[Kibo Commerce](https://kibocommerce.com/)** | Composable commerce and order management platform supporting unified customer and order experiences across channels. | Starts at ~$1,667/mo ($20,000/yr) based on order lines processed tiers | 60-day free trial / sandbox POC access for prospective enterprise buyers and partners upon request |
+| **[NewStore](https://www.newstore.com/)** | Omnichannel platform focused on store and digital order orchestration for modern retail brands. | Modular connector bundles start at ~$1,667/mo ($20,000/yr); full platform from ~$4,167/mo ($50,000/yr) | No permanent free plan; guided retail tech stack demo and workflow assessment upon request (0 days self-serve) |
+| **[Salesforce Order Management](https://www.salesforce.com/)** | Order management capabilities within the Salesforce Commerce and Service Cloud ecosystem for connected customer journeys. | Order Visibility Edition starts at 0.25% of GMV; Growth Edition starts at 1.0% of GMV (billed annually) | 30-day free trial via Salesforce Commerce Cloud / Starter Suite trial; custom enterprise OMS sandbox on request |
 
 
 
