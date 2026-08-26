@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="45%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1138" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="cyan-violet-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#818cf8;#c084fc;#38bdf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#818cf8">
+        <animate attributeName="stop-color" values="#818cf8;#c084fc;#38bdf8;#818cf8" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#38bdf8;#818cf8;#ec4899" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <radialGradient id="glow-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      .title {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        fill: #f8fafc;
+        letter-spacing: -0.5px;
+      }
+      .subtitle {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        fill: #38bdf8;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .tag-text {
+        font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #cbd5e1;
+      }
+      .pulse-circle {
+        animation: pulse 3s infinite ease-in-out;
+      }
+      .flow-line {
+        stroke-dasharray: 8, 8;
+        animation: dash 12s linear infinite;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: -160;
+        }
+      }
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 0.7;
+        }
+        50% {
+          transform: scale(1.15);
+          opacity: 1;
+        }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bg-grad)" rx="16" />
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="90" r="220" fill="url(#glow-cyan)" />
+  <circle cx="1020" cy="240" r="260" fill="url(#glow-purple)" />
+
+  <!-- Grid overlay -->
+  <rect width="1200" height="360" fill="url(#cyber-grid)" rx="16" />
+
+  <!-- Outer Border -->
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="15" fill="none" stroke="url(#cyan-violet-grad)" stroke-width="2" stroke-opacity="0.6" />
+
+  <!-- Architectural Circuit / Flow Lines -->
+  <g opacity="0.35">
+    <path d="M 60 180 L 220 180 L 280 240 L 450 240" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-line" />
+    <path d="M 750 120 L 920 120 L 980 180 L 1140 180" fill="none" stroke="#ec4899" stroke-width="2" class="flow-line" />
+    <path d="M 300 80 L 420 80 L 480 140 L 720 140" fill="none" stroke="#818cf8" stroke-width="1.5" class="flow-line" />
+    <path d="M 800 280 L 940 280 L 1000 220" fill="none" stroke="#a855f7" stroke-width="1.5" class="flow-line" />
+  </g>
+
+  <!-- Dynamic Network Nodes / Logistics Center Visualization -->
+  <g transform="translate(940, 70)" filter="url(#shadow)">
+    <circle cx="100" cy="110" r="85" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4,4" />
+    <circle cx="100" cy="110" r="55" fill="none" stroke="#475569" stroke-width="1.5" />
+    <circle cx="100" cy="110" r="28" fill="#1e293b" stroke="url(#cyan-violet-grad)" stroke-width="2.5" />
+    
+    <!-- Central Hub Icon (Package/Cube) -->
+    <path d="M 92 105 L 100 100 L 108 105 L 108 115 L 100 120 L 92 115 Z" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linejoin="round" />
+    <path d="M 100 100 L 100 120 M 92 105 L 100 110 L 108 105" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Satellite Nodes -->
+    <circle cx="35" cy="60" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <circle cx="35" cy="60" r="5" fill="#38bdf8" />
+    <line x1="47" y1="69" x2="80" y2="97" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3" />
+
+    <circle cx="165" cy="60" r="14" fill="#0f172a" stroke="#818cf8" stroke-width="2" />
+    <circle cx="165" cy="60" r="5" fill="#818cf8" />
+    <line x1="153" y1="69" x2="120" y2="97" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="3,3" />
+
+    <circle cx="150" cy="165" r="14" fill="#0f172a" stroke="#ec4899" stroke-width="2" />
+    <circle cx="150" cy="165" r="5" fill="#ec4899" />
+    <line x1="138" y1="154" x2="114" y2="126" stroke="#ec4899" stroke-width="1.5" stroke-dasharray="3,3" />
+
+    <circle cx="50" cy="165" r="14" fill="#0f172a" stroke="#34d399" stroke-width="2" />
+    <circle cx="50" cy="165" r="5" fill="#34d399" />
+    <line x1="62" y1="154" x2="86" y2="126" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(80, 0)">
+    
+    <!-- Top Category Pill Badge -->
+    <g transform="translate(0, 52)">
+      <rect width="260" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.7" />
+      <circle cx="16" cy="14" r="5" fill="#38bdf8" class="pulse-circle">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="32" y="18.5" class="badge-text">Omnichannel Architecture</text>
+    </g>
+
+    <!-- Main Title -->
+    <g transform="translate(0, 126)">
+      <text class="title">
+        Awesome <tspan fill="url(#cyan-violet-grad)">Order Management</tspan>
+      </text>
+    </g>
+
+    <!-- Subtitle -->
+    <g transform="translate(0, 168)">
+      <text class="subtitle">
+        Curated Enterprise SaaS &amp; Open-Source Distributed OMS Platforms
+      </text>
+    </g>
+
+    <!-- Feature Pillars / Tags -->
+    <g transform="translate(0, 218)">
+      <g transform="translate(0, 0)">
+        <rect width="170" height="38" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+        <text x="24" y="24" class="tag-text">⚡ Orchestration</text>
+      </g>
+
+      <g transform="translate(182, 0)">
+        <rect width="180" height="38" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+        <text x="24" y="24" class="tag-text">📦 Inventory Routing</text>
+      </g>
+
+      <g transform="translate(374, 0)">
+        <rect width="175" height="38" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+        <text x="24" y="24" class="tag-text">🏬 BOPIS &amp; Dropship</text>
+      </g>
+
+      <g transform="translate(561, 0)">
+        <rect width="185" height="38" rx="8" fill="url(#card-grad)" stroke="#334155" stroke-width="1" />
+        <text x="24" y="24" class="tag-text">🔄 Reverse Logistics</text>
+      </g>
+    </g>
+
+    <!-- Secondary Meta Row -->
+    <g transform="translate(0, 292)">
+      <text font-family="'Segoe UI', sans-serif" font-size="13" fill="#64748b" font-weight="500">
+        🚀 Updated for 2026 • Curated with Specific Pricing, Free Tiers, Capabilities &amp; Stars
+      </text>
+    </g>
+  </g>
+</svg>
